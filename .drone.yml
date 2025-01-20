@@ -8,11 +8,6 @@ steps:
     commands:
       - npm install
 
-  - name: build-project
-    image: node:18
-    commands:
-      - npm run build
-
   - name: copy-build-to-server
     image: appleboy/drone-scp
     settings:
@@ -20,5 +15,5 @@ steps:
       username: assafco
       password: 12345  # Use secrets instead of plain text (see below)
       port: 22
-      source: "build/*"
+      source: "*"
       target: "/var/www/html/projects-server"  # Change this to your target folder
