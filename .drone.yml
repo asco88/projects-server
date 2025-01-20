@@ -18,10 +18,11 @@ steps:
       source: "*"
       target: "/var/www/html/projects-server"  # Change this to your target folder
 
-services:
-  - name: node-server
+  - name: start-app
     image: node:18
     commands:
+      - npm install
+      - npm run build
       - npm start
     ports:
       - 3000
