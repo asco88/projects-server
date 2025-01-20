@@ -7,7 +7,12 @@ steps:
     image: node:18
     commands:
       - npm install
-      
+
+  - name: build-project
+    image: node:18
+    commands:
+      - npm run build
+
   - name: copy-build-to-server
     image: appleboy/drone-scp
     settings:
