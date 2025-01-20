@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kiddie-bank/static/css/main.7c96e85a.css",
+    "main.js": "/kiddie-bank/static/js/main.7027ce25.js",
+    "static/js/453.fac3d211.chunk.js": "/kiddie-bank/static/js/453.fac3d211.chunk.js",
+    "index.html": "/kiddie-bank/index.html",
+    "main.7c96e85a.css.map": "/kiddie-bank/static/css/main.7c96e85a.css.map",
+    "main.7027ce25.js.map": "/kiddie-bank/static/js/main.7027ce25.js.map",
+    "453.fac3d211.chunk.js.map": "/kiddie-bank/static/js/453.fac3d211.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c96e85a.css",
+    "static/js/main.7027ce25.js"
+  ]
+}

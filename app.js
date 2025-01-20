@@ -18,6 +18,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/kiddie-bank', express.static(path.join(__dirname, 'kiddie-bank-react')));
+// app.use('/static', express.static(path.join(__dirname, 'react-build/static')));
+
+// Handle all other routes by serving React's index.html
+app.get("/kiddie-bank/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "kiddie-bank-react", "index.html"));
+});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
