@@ -21,8 +21,6 @@ steps:
   - name: start-app
     image: node:18
     commands:
-      - npm install
-      - npm run build
       - npm start
     ports:
       - 3000
