@@ -17,3 +17,11 @@ steps:
       port: 22
       source: "*"
       target: "/var/www/html/projects-server"  # Change this to your target folder
+
+services:
+  - name: node-server
+    image: node:18
+    commands:
+      - npm start
+    ports:
+      - 3000
